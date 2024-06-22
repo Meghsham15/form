@@ -9,22 +9,22 @@ function App() {
     <Router>
     <nav>
       <ul>
-        <li><Link to='/'> Level 1 </Link></li>
-        <li><Link to='/level2'> Level 2 </Link></li>
-        <li><Link to='/level3'> Level 3 </Link></li>
+        <li><Link to='/form'> Level 1 </Link></li>
+        <li><Link to='/form/level2'> Level 2 </Link></li>
+        <li><Link to='/form/level3'> Level 3 </Link></li>
       </ul>
     </nav>
     <Routes>
       <Route
-      path="/"
+      path="/form"
       element={<EventRegistrationForm/>}
       />
       <Route
-      path="/level3"
+      path="/form/level3"
       element={<SurveyForm/>}
       />
       <Route
-      path="/level2"
+      path="/form/level2"
       element={<JobApplicationForm/>}
       />
     </Routes>
